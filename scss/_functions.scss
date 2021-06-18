@@ -251,9 +251,9 @@ $_luminance-list: .0008 .001 .0011 .0013 .0015 .0017 .002 .0022 .0025 .0027 .003
   $dividend-unit: unit($dividend);
   $divisor-unit: unit($divisor);
   $unit-map: (
-    'px': 1px,
-    'rem': 1rem,
-    'em': 1em
+    "px": 1px,
+    "rem": 1rem,
+    "em": 1em
   );
   @if ($dividend-unit != $divisor-unit and map-has-key($unit-map, $dividend-unit)) {
     $result: $result * map-get($unit-map, $dividend-unit);
